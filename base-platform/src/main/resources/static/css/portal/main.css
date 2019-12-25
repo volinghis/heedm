@@ -1,0 +1,79 @@
+div{
+	position: absolute;
+	overflow:hidden;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.top-left{
+	width: 10%;
+	height: 5%;
+	left: 0;
+	top: 0;
+	border-right:1px solid black;
+	background-color: #dee2e2;	
+}
+.top-right{
+	width: 90%;
+	height: 5%;
+	left: 10%;
+	top: 0;
+	background-color: #dee2e2;	
+}
+.bottom{
+	width: 100%;
+	height: 95%;
+	left: 0;
+	top: 5%;
+	background-color: #fff;
+}
+
+.jumbotron { 
+	background: #020031; 
+	background: -moz-linear-gradient(45deg,#020031 0,#6d3353 100%); 
+	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#020031),color-stop(100%,#6d3353)); 
+	background: -webkit-linear-gradient(45deg,#020031 0,#6d3353 100%); 
+	background: -o-linear-gradient(45deg,#020031 0,#6d3353 100%); 
+	background: -ms-linear-gradient(45deg,#020031 0,#6d3353 100%); 
+	background: linear-gradient(45deg,#020031 0,#6d3353 100%); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#020031, endColorstr=#6d3353, GradientType=1);
+}
+table{
+	height:100%;
+}
+table td ,table th{ 
+	border: none;
+	cursor: pointer;
+}
+.tdhover{
+	background-color: white;
+}
+.lefttd{
+	text-align: left;
+	padding-left: 10px;
+}
+.leftfont{
+	font-size: 22px;
+	font-style: italic;
+}
+font{
+	color: black;
+	font-weight:bold;
+	font-size: 14px;
+}
+.glyphicon-arrow-down{
+	color: green;
+}
+.systemDiv{
+	width: 10%;
+	left: 0;
+	top: 5%;
+	z-index:9999;
+	display:none;
+	background-color:#dee2e2;
+	border-right:1px solid black;
+	border-bottom: 1px solid black;
+}
+.systemDiv td{
+	border-top: 1px solid black;
+}

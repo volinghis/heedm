@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <menus targetClass="com.ehs.security.entity.SysMenu"> 
+    <menu dataCode="deviceManagerSystem" code="deviceManagerSystem"  icon="fa fa-send-o"   url="/edm/action/edmLibraryManager/edmLibraryQuery" name="设备管理系统" sort="1"> 
+    <!--  <menu dataCode="edmManager" code="edmManager" url="" icon="fa fa-desktop"  name="设备管理" sort="1" parentCode="deviceManagerSystem"> -->
+      <!--    <menu dataCode="edmManagerDecription" code="edmManagerDecription" url="" name="系统简介" sort="1" parentCode="edmManager"/>   -->
+      <!--  <menu dataCode="edmLibraryManager" code="edmLibraryManager" icon="fa fa-send-o"  url="" name="设备管理" sort="5" parentCode="edmManager"> -->
+        <!-- 
+          <menu dataCode="edmLibrary" code="edmLibrary" url="/edm/action/edmLibraryManager/edmLibrary" name="设备总承" sort="1" parentCode="edmLibraryManager"/>  
+            -->
+           <menu dataCode="edmAccountPrint" code="edmAccountPrint"  icon="fa fa-cogs" url="/edm/action/edmLibraryManager/edmAccountPrint" name="设备台账" sort="1" parentCode="deviceManagerSystem"/>  
+           <menu dataCode="edmRepairAccountPrint" code="edmRepairAccountPrint" icon="fa fa-wrench"  url="/edm/action/edmLibraryManager/edmRepairAccountPrint" name="检修台账" sort="2" parentCode="deviceManagerSystem"/>  
+           
+           <!-- 
+          <menu dataCode="edmLibraryCheck" code="edmLibraryCheck" url="" name="设备盘点" sort="10" parentCode="edmLibraryManager"> 
+            <menu dataCode="edmLibraryCheckPlan" code="edmLibraryCheckPlan" url="" name="设备盘点计划" sort="1" parentCode="edmLibraryCheck"/>  
+            <menu dataCode="edmLibraryCheckTask" code="edmLibraryCheckTask" url="" name="设备盘点任务" sort="10" parentCode="edmLibraryCheck"/> 
+          </menu>  
+         
+          <menu dataCode="edmLibraryQuery" code="edmLibraryQuery" url="/edm/action/edmLibraryManager/edmLibraryQuery" name="设备检索" sort="20" parentCode="edmLibraryManager"/> 
+           -->
+       <!-- </menu>  -->
+       <!-- <menu dataCode="edmPartManager" code="edmPartManager"   icon="fa fa-modx"  url="" name="备品备件" sort="10" parentCode="edmManager"> -->
+          <menu dataCode="edmPartLibrary" code="edmPartLibrary"   icon="fa fa-archive"  url="/edm/action/edmPartLibrary" name="备件台账" sort="3" parentCode="deviceManagerSystem"/>  
+          <!-- 
+          <menu dataCode="edmPartCheck" code="edmPartCheck" url="" name="备件盘点" sort="10" parentCode="edmPartManager"> 
+            <menu dataCode="edmPartCheckPlan" code="edmPartCheckPlan" url="" name="备件盘点计划" sort="1" parentCode="edmPartCheck"/>  
+            <menu dataCode="edmPartCheckTask" code="edmPartCheckTask" url="" name="备件盘点任务" sort="10" parentCode="edmPartCheck"/> 
+          </menu>  
+          -->
+       <!-- </menu>  -->  
+        <menu dataCode="edmData" code="edmData" url=""  icon="fa fa-file-text-o"  name="设备资料" sort="20" parentCode="deviceManagerSystem"> 
+          <menu dataCode="edmDataLibrary" code="edmDataLibrary"  icon="fa fa-jsfiddle"  url="/edm/action/edmDataLibrary/goEquipmentDatabase" name="设备资料库" sort="1" parentCode="edmData"/>  
+          <menu dataCode="edmLawsLibrary" code="edmLawsLibrary"  icon="fa fa-book"  url="/edm/action/edmDataLibrary/goRulesDatabase" name="规章制度库" sort="2" parentCode="edmData"/> 
+        </menu>
+        <!-- 
+        <menu dataCode="edmDefectManager" code="edmDefectManager" url="" name="设备缺陷" sort="30" parentCode="edmManager"> 
+          <menu dataCode="edmDefectLibrary" code="edmDefectLibrary" url="" name="缺陷库" sort="1" parentCode="edmDefectManager"> 
+            <menu dataCode="edmDefect" code="edmDefect" url="" name="一般缺陷" sort="1" parentCode="edmDefectLibrary"/>  
+            <menu dataCode="edmDefectMajor" code="edmDefectMajor" url="" name="重大缺陷" sort="10" parentCode="edmDefectLibrary"/> 
+          </menu> 
+        </menu>  
+        <menu dataCode="edmExChangesManager" code="edmExChangesManager" url="" name="设备异动" sort="35" parentCode="edmManager"> 
+            <menu dataCode="edmExChangesApply" code="edmExChangesApply" url="/edm/action/edmExChangesManager/edmExChangesApply" name="异动申请" sort="1" parentCode="edmExChangesManager"/>  
+            <menu dataCode="edmExChangesTask" code="edmExChangesTask" url="" name="异动处理" sort="10" parentCode="edmExChangesManager"/> 
+        </menu>  
+        <menu dataCode="edmRepairManager" code="edmRepairManager" url="" name="设备检修" sort="40" parentCode="edmManager"> 
+          <menu dataCode="edmCheck" code="edmCheck" url="" name="设备巡检" sort="1" parentCode="edmRepairManager"> 
+            <menu dataCode="edmCheckPlan" code="edmCheckPlan" url="/edm/action/edmCheck/edmCheckPlan" name="巡检计划" sort="1" parentCode="edmCheck"/>  
+            <menu dataCode="edmCheckTask" code="edmCheckTask" url="" name="巡检任务" sort="10" parentCode="edmCheck"/> 
+          </menu>  
+          <menu dataCode="edmMaintain" code="edmMaintain" url="" name="机组保养" sort="10" parentCode="edmRepairManager"/>  
+          <menu dataCode="edmRepair" code="edmRepair" url="" name="设备维修" sort="20" parentCode="edmRepairManager"/> 
+        </menu>  
+         -->
+      <!--  <menu dataCode="edmBasicManager" code="edmBasicManager" icon="fa fa-database"  url="" name="基础数据" sort="50" parentCode="edmSystemManager"> -->
+          <menu dataCode="edmBasicData" code="edmBasicData" icon="fa fa-leaf"  url="/security-web/action/basicData/goBasicData?code=edmGroupInfo" name="设备树维护" sort="6" parentCode="edmSystemManager" systemCode="edmBasicData"> 
+          <!-- 
+            <menu dataCode="edmBasicType" code="edmBasicType" url="/security-web/action/basicData/goBasicData?code=edmBasicType" name="设备分类" sort="1" parentCode="edmBasicData"/>  
+            <menu dataCode="edmPartType" code="edmPartType" url="/security-web/action/basicData/goBasicData?code=edmPartType" name="备件类型" sort="10" parentCode="edmBasicData"/>  
+            <menu dataCode="edmGroupInfo" code="edmGroupInfo" icon="fa fa-barcode"  url="/security-web/action/basicData/goBasicData?code=edmGroupInfo" name="生产信息" sort="20" parentCode="edmBasicData"/>  
+            <menu dataCode="edmLawsType" code="edmLawsType" url="/edm/action/edmBasicData/goEdmBasicData?code=edmLawsType" name="规章制度分类" sort="30" parentCode="edmBasicData"/> 
+			<menu dataCode="edmEquipmentInfo" code="edmEquipmentInfo" url="/edm/action/edmBasicData/goEdmBasicData?code=edmEquipmentInfo" name="设备资料分类" sort="40" parentCode="edmBasicData"/>
+			--> 
+          </menu>
+          <!--   
+          <menu dataCode="edmFactory" code="edmFactory" url="" name="厂商数据" sort="10" parentCode="edmBasicManager"> 
+            <menu dataCode="edmProdFactory" code="edmProdFactory" url="" name="生产商数据" sort="1" parentCode="edmFactory"/>  
+            <menu dataCode="edmSupplyFactory" code="edmSupplyFactory" url="" name="供应商数据" sort="10" parentCode="edmFactory"/> 
+          </menu>
+           --> 
+      <!--  </menu>  -->
+    <!--  </menu> -->
+            <menu dataCode="edmSystemManager" code="edmSystemManager"  icon="fa fa-desktop" url="" name="系统管理" sort="60" parentCode="deviceManagerSystem"> 
+          <!--  	<menu dataCode="edmOrgManager" code="edmOrgManager"  icon="fa fa-coffee" url="" name="组织管理" sort="1" parentCode="edmSystemManager"> -->
+            	<menu dataCode="edmOrg" code="edmOrg" icon="fa fa-sitemap"   url="/security-web/action/orgManager/orgManager" name="部门管理" sort="1" parentCode="edmSystemManager"/>  
+            	<menu dataCode="edmUser" code="edmUser"  icon="fa fa-user"  url="/security-web/action/orgManager/userManager" name="用户管理" sort="2" parentCode="edmSystemManager"/> 
+          	</menu>  
+           	<menu dataCode="edmRoleManager" code="edmRoleManager" icon="fa fa-street-view"   url="/security-web/action/roleManager/roleManager" name="角色管理" sort="3" parentCode="edmSystemManager"/> 
+           	<menu dataCode="edmAccountManager" code="edmAccountManager"  icon="fa fa-user"   url="/security-web/action/accountManager/accountManager" name="账号管理" sort="4" parentCode="edmSystemManager"/> 
+           	<menu dataCode="edmMenuManager" code="edmMenuManager"  icon="fa fa-bars"  url="/security-web/action/menuManager/menuManager" name="菜单授权" sort="5" parentCode="edmSystemManager"/> 
+         	<menu dataCode="edmLogManager" code="edmLogManager"  icon="fa fa-book"  url="/security-web/action/loginLog" name="登录日志" sort="8" parentCode="edmSystemManager"/> 
+            <menu dataCode="edmDataManager" code="edmDataManager"  icon="fa fa-database"  url="/security-web/action/dict" sort="7"  name="数据字典" parentCode="edmSystemManager" /> 
+          <!-- 
+          <menu dataCode="edmLoginLog" code="edmLoginLog" url="" name="登录日志" sort="1" parentCode="edmSystemManager"/> 
+           -->
+        </menu> 
+   <!-- </menu>  --> 
+  </menus> 
+  
+  
+  	<dataDictionarys targetClass="com.ehs.security.entity.DataDictionary">
+  		<dataDictionary  dataCode="deviceStatus" code="deviceStatus" text="设备状态" parentCode="dataDict" systemCode="edm" sort="1">
+			<dataDictionary dataCode="deviceStatus_runing" code="deviceStatus_runing" text="运行中" sort="1" parentCode="deviceStatus" systemCode="edm"/>
+			<dataDictionary dataCode="deviceStatus_discard" code="deviceStatus_discard" text="已报废" sort="10" parentCode="deviceStatus" systemCode="edm"/>
+  		</dataDictionary>
+  		
+		<dataDictionary  dataCode="edmBasicType" code="edmBasicType" text="设备类型"  parentCode="dataDict" systemCode="dataDict" sort="2">
+			<dataDictionary  dataCode="edmBasicType_base" code="edmBasicType_base" text="普通设备"   sort="1" systemCode="dataDict" parentCode="edmBasicType"></dataDictionary>
+			<dataDictionary  dataCode="edmBasicType_danger" code="edmBasicType_danger" text="高危设备" sort="2"  systemCode="dataDict" parentCode="edmBasicType"></dataDictionary>
+		</dataDictionary>
+		
+		<dataDictionary  dataCode="edmRepairNature" code="edmRepairNature" text="检修性质" parentCode="dataDict" systemCode="dataDict" sort="3">
+			<dataDictionary  dataCode="ALevelRepair" code="ALevelRepair" text="A级检修"  sort="1" systemCode="dataDict" parentCode="edmRepairNature"></dataDictionary>
+			<dataDictionary  dataCode="BLevelRepair" code="BLevelRepair" text="B级检修"  sort="2"  systemCode="dataDict" parentCode="edmRepairNature"></dataDictionary>
+			<dataDictionary  dataCode="CLevelRepair" code="CLevelRepair" text="C级检修"   sort="3" systemCode="dataDict" parentCode="edmRepairNature"></dataDictionary>
+			<dataDictionary  dataCode="rushRepair" code="rushRepair" text="抢修"  systemCode="dataDict"  sort="4" parentCode="edmRepairNature"></dataDictionary>
+			<dataDictionary  dataCode="temporaryRepair" code="temporaryRepair" text="临修"  sort="5" systemCode="dataDict" parentCode="edmRepairNature"></dataDictionary>
+			<dataDictionary  dataCode="dailyRepair" code="dailyRepair" text="日常检修维护"  sort="6" systemCode="dataDict" parentCode="edmRepairNature"></dataDictionary>
+		</dataDictionary>
+		 <!--
+  		<dataDictionary  dataCode="edmPartType" code="edmPartType" text="备件类型"  systemCode="edm"></dataDictionary>
+  		 -->
+  		<dataDictionary  dataCode="edmGroupInfo" code="edmGroupInfo" text="大唐韩城第二发电厂有限公司"  systemCode="edmGroupInfo"></dataDictionary>
+  		<dataDictionary  dataCode="dataDict" code="dataDict" text="数据字典维护"  systemCode="dataDict"></dataDictionary>
+  		
+  		
+  		<dataDictionary  dataCode="edmLawsType" code="edmLawsType" text="规章制度分类" parentCode="dataDict" systemCode="dataDict" sort="4">
+			<DataDictionary dataCode="managementSys" code="managementSys" text="国家标准制度" sort="1" parentCode="edmLawsType"  systemCode="dataDict" />
+			<DataDictionary dataCode="maintenanceSys" code="maintenanceSys" text="行业标准制度" sort="2" parentCode="edmLawsType"  systemCode="dataDict" />
+			<DataDictionary dataCode="safetyProductionSys" code="safetyProductionSys" text="企业标准制度" sort="3" parentCode="edmLawsType"  systemCode="dataDict"/>
+		</dataDictionary>
+  		<dataDictionary  dataCode="edmEquipmentInfo" code="edmEquipmentInfo" text="设备资料分类" parentCode="dataDict" systemCode="dataDict" sort="5">
+			<DataDictionary dataCode="synopsis" code="synopsis" text="说明书" sort="1" parentCode="edmEquipmentInfo"  systemCode="dataDict" />
+			<DataDictionary dataCode="warrantyCard" code="warrantyCard" text="质保卡" sort="2" parentCode="edmEquipmentInfo"  systemCode="dataDict" />
+			<DataDictionary dataCode="operationManual" code="operationManual" text="操作手册" sort="3" parentCode="edmEquipmentInfo"  systemCode="dataDict"/>
+			<DataDictionary dataCode="maintenanceExp" code="maintenanceExp" text="维修经验" sort="4" parentCode="edmEquipmentInfo"  systemCode="dataDict"/>
+  		</dataDictionary> 
+  		<dataDictionary dataCode ="materialType" code="materialType" text="物资类别"  parentCode="dataDict" systemCode="dataDict" sort="6">
+			<DataDictionary dataCode="AmaterialType" code="AmaterialType" text="A级物资" sort="1" parentCode="materialType"  systemCode="dataDict" />
+			<DataDictionary dataCode="BmaterialType" code="BmaterialType" text="B级物资" sort="2" parentCode="materialType"  systemCode="dataDict" />
+			<DataDictionary dataCode="CmaterialType" code="CmaterialType" text="C级物资" sort="3" parentCode="materialType"  systemCode="dataDict" />
+			<DataDictionary dataCode="DmaterialType" code="DmaterialType" text="D级物资" sort="4" parentCode="materialType"  systemCode="dataDict" />
+		</dataDictionary>	
+  		<dataDictionary dataCode ="position" code="position" text="职务" parentCode="dataDict" systemCode="dataDict" sort="7">
+			<DataDictionary dataCode="Aposition" code="Aposition" text="厂长" sort="1" parentCode="position"  systemCode="dataDict" />
+			<DataDictionary dataCode="Bposition" code="Bposition" text="生产主管" sort="2" parentCode="position"  systemCode="dataDict" />
+			<DataDictionary dataCode="Cposition" code="Cposition" text="车间主任" sort="3" parentCode="position"  systemCode="dataDict" />
+			<DataDictionary dataCode="Dposition" code="Dposition" text="设备工程师" sort="4" parentCode="position"  systemCode="dataDict" />
+			<DataDictionary dataCode="Eposition" code="Eposition" text="质量控制主管" sort="5" parentCode="position"  systemCode="dataDict" />
+			<DataDictionary dataCode="Fposition" code="Fposition" text="检修工程师" sort="6" parentCode="position"  systemCode="dataDict" />
+		</dataDictionary>	
+		<!-- 
+		<dataDictionary dataCode ="manufacturer" code="manufacturer" text="厂家维护" parentCode="dataDict" systemCode="dataDict" sort="8">
+			<DataDictionary dataCode="Amanufacturer" code="Amanufacturer" text="纳西姆工业（中国）有限公司" sort="1" parentCode="manufacturer"  systemCode="dataDict" />
+			<DataDictionary dataCode="Bmanufacturer" code="Bmanufacturer" text="上海凯士比有限公司" sort="2" parentCode="manufacturer"  systemCode="dataDict" />
+			<DataDictionary dataCode="Cmanufacturer" code="Cmanufacturer" text="湘潭电机厂有限公司" sort="3" parentCode="manufacturer"  systemCode="dataDict" />
+			<DataDictionary dataCode="Dmanufacturer" code="Dmanufacturer" text="长沙通大（集团）有限公司" sort="4" parentCode="manufacturer"  systemCode="dataDict" />
+			<DataDictionary dataCode="Emanufacturer" code="Emanufacturer" text="西安协力" sort="5" parentCode="manufacturer"  systemCode="dataDict" />
+			<DataDictionary dataCode="Fmanufacturer" code="Fmanufacturer" text="北京电力设备厂" sort="6" parentCode="manufacturer"  systemCode="dataDict" />
+		</dataDictionary>	
+		<dataDictionary dataCode ="supplier" code="supplier" text="供应商维护" parentCode="dataDict" systemCode="dataDict" sort="9">
+			<dataDictionary dataCode="Asupplier" code="Asupplier" text="纳西姆工业（中国）有限公司" sort="1" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+			<dataDictionary dataCode="Bsupplier" code="Bsupplier" text="上海凯士比有限公司" sort="2" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+			<dataDictionary dataCode="Csupplier" code="Csupplier" text="湘潭电机厂有限公司" sort="3" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+			<dataDictionary dataCode="Dsupplier" code="Dsupplier" text="长沙通大（集团）有限公司" sort="4" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+			<dataDictionary dataCode="Esupplier" code="Esupplier" text="西安协力" sort="5" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+			<dataDictionary dataCode="Fsupplier" code="Fsupplier" text="北京电力设备厂" sort="6" parentCode="supplier"  systemCode="dataDict"></dataDictionary>
+		</dataDictionary>	
+		-->	
+		<dataDictionary  dataCode="quipmentRating" code="quipmentRating" text="设备评级" parentCode="dataDict" systemCode="dataDict" sort="10">
+			<dataDictionary  dataCode="Primary_standard" code="Primary_standard" text="一级标准"  sort="1" systemCode="dataDict" parentCode="quipmentRating"></dataDictionary>
+			<dataDictionary  dataCode="Secondary_standard" code="Secondary_standard" text="二级标准"  sort="2" systemCode="dataDict" parentCode="quipmentRating"></dataDictionary>
+			<dataDictionary  dataCode="Third_level_standard" code="Third_level_standard" text="三级标准"  sort="3" systemCode="dataDict" parentCode="quipmentRating"></dataDictionary>
+		</dataDictionary>	
+	</dataDictionarys>
+</root>

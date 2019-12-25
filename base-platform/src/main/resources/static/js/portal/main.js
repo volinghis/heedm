@@ -1,0 +1,30 @@
+$(document).ready(function() {
+	$("#_mt").find("td").unbind("click").bind("click",function(){
+		$(".tdhover").removeClass("tdhover");
+		$(".selectEL").removeClass("selectEL");
+		$(this).addClass("tdhover");
+		$(this).addClass("selectEL");
+	});
+	$("#_mt").find("td").unbind("mouseover").bind("mouseover",function(){
+		$(this).addClass("tdhover");
+	});
+	$("#_mt").find("td").unbind("mouseout").bind("mouseout",function(){
+		if(!$(this).hasClass("selectEL")){
+			$(this).removeClass("tdhover");
+		}
+	});
+	$("#_lt").find("td").unbind("click").bind("click",function(){
+		if($('.systemDiv').is(':hidden')){
+			$('.systemDiv').show();
+		}else{
+			$('.systemDiv').hide();
+		}
+	});
+	$(".systemDiv").find("td").unbind("click").bind("click",function(){
+		window.top.location.href=$("#_globalContextPath").val()+"/action/portal?systemCode="+$(this).attr("mcode");
+	});
+	$("#_mt").find("td").unbind("click").bind("click",function(){
+		$(".bottom").load($("#_globalContextPath").val()+"/action/portalData?systemCode="+$(this).attr("mcode"));
+	});
+});
+

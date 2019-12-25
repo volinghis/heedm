@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+label{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:13px;
+}
+
+#form table{
+	margin: auto;
+}
+#form table td:nth-child(2n){
+	text-align: left;
+	width: 200px;
+}
+#form table td:nth-child(2n+1){
+	text-align: right;
+	width:100px;
+}
+
+#form{
+	margin:0,auto;
+ 	text-align:center;
+}

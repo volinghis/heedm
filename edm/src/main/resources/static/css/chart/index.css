@@ -1,0 +1,17 @@
+div{
+	width: 100%;
+	height: 33%;
+}
+.top{
+	top: 0;
+	left: 0;
+}
+.middle{
+	top:33%;
+	left: 0;
+}
+.bottom{
+	top:66%;
+	height:34%;
+	left: 0;
+}

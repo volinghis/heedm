@@ -1,0 +1,13 @@
+._m{
+	width: 25%;
+	height: 50%;
+	background:white;
+	border: 1px solid black;
+	float:left;
+}
+._s{
+	width: 50%;
+	height:50%;
+	float:left;
+	border: 1px solid black;
+}

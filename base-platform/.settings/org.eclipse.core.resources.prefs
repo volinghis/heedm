@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources/init/views.sql=UTF-8
+encoding//src/main/resources/static/css/loginV3/style.css=UTF-8
+encoding//src/main/resources/static/css/portal/mainV2.css=UTF-8
+encoding//src/main/resources/templates/flow/task/redoList.ftl=UTF-8
+encoding//src/main/resources/templates/flow/task/taskPage.ftl=UTF-8
+encoding//src/main/resources/templates/flow/task/todoList.ftl=UTF-8
+encoding//src/main/resources/templates/loginV2.ftl=UTF-8
+encoding//src/main/resources/templates/loginV3.ftl=UTF-8
+encoding//src/main/resources/templates/portal=UTF-8
+encoding//src/main/resources/templates/portal/main.ftl=UTF-8
+encoding//src/main/resources/templates/portal/mainV2.ftl=UTF-8
+encoding//src/main/resources/templates/portal/mainV3.ftl=UTF-8
+encoding//src/main/resources/templates/portal/mainV4.ftl=UTF-8
+encoding//src/main/resources/templates/portal/updatPassword.ftl=UTF-8

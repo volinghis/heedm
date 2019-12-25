@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<menus targetClass="com.ehs.security.entity.SysMenu">
+		<menu dataCode="systemManager" code="systemManager" icon="fa  fa-cog" url="/security-web/action/menuManager/menuManager" name="系统管理" sort="9999"> 
+		<menu dataCode="securityMenusManger" code="securityMenusManger"  icon="fa fa-desktop"  parentCode="systemManager" sort="1" name="系统管理">
+          <menu dataCode="systemManager_org" code="systemManager_org"  icon="fa fa-coffee"  url="/security-web/action/organize" name="组织管理" sort="1" parentCode="securityMenusManger"> 
+            <menu dataCode="sysOrgManager" code="sysOrgManager"  icon="fa fa-sitemap"  url="/security-web/action/orgManager/orgManager" name="组织管理" sort="1" parentCode="systemManager_org"/>  
+            <menu dataCode="systemManager_user" code="systemManager_user" icon="fa fa-user"  url="/security-web/action/orgManager/userManager" name="用户管理" sort="10" parentCode="systemManager_org"/> 
+          </menu>  
+           <menu dataCode="systemManager_role" code="systemManager_role"  icon="fa fa-paw"  url="/security-web/action/roleManager/roleManager" name="角色管理" sort="2" parentCode="securityMenusManger"/> 
+           <menu dataCode="systemManager_account" code="systemManager_account"  icon="fa fa-graduation-cap"  url="/security-web/action/accountManager/accountManager" name="账号管理" sort="3" parentCode="securityMenusManger"/> 
+           <menu dataCode="systemManager_menu" code="systemManager_menu"  icon="fa fa-navicon"  url="/security-web/action/menuManager/menuManager" name="菜单授权" sort="4" parentCode="securityMenusManger"/> 
+           <menu dataCode="systemManager_log" code="systemManager_log"  icon="fa fa-warning"  url="/security-web/action/loginLog" name="登录日志" sort="5" parentCode="securityMenusManger"/> 
+           <menu dataCode="systemManager_data" code="systemManager_data"  icon="fa fa-book"  url="/security-web/action/dict" sort="6"  name="数据字典" parentCode="securityMenusManger" />
+        </menu> 
+        </menu>
+	</menus>
+</root>

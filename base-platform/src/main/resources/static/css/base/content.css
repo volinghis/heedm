@@ -1,0 +1,13 @@
+.contentIframe{
+	width: 100%;
+	background-color:white;
+	border: 0;
+	position: static;
+	overflow: auto;
+}
+.menu{
+	height: 30px;
+	width:100%;
+	position: static;
+	background-color: #71C671;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<roles targetClass="com.ehs.security.entity.SysRole">
+		<role dataCode="sysAdmin" code="sysAdmin" name="管理员" remark="管理员"/>
+		<role dataCode="normal" code="normal" name="普通用户" remark="普通用户"/>
+	</roles>
+	
+	<users targetClass="com.ehs.security.entity.SysUser">
+		<user code="admin" account="admin" password="e10adc3949ba59abbe56e057f20f883e" state="0" />	
+	</users>
+	
+	<orgs targetClass="com.ehs.security.entity.OrganizationInfo">
+		<org dataCode="unit_top" code="unit_top" name="大唐韩城第二发电厂有限公司" />
+	</orgs>
+	
+	<uerRoles targetClass="com.ehs.security.entity.SysUserRole">
+		<userRole code="admin_sysAdmin" sysUserCode="admin" roleCode="sysAdmin"/>
+	</uerRoles>
+	
+	
+	  	<dataDictionarys targetClass="com.ehs.security.entity.DataDictionary">
+  		<dataDictionary  dataCode="flowStatus" code="flowStatus" text="审批状态" parentCode="dataDict" systemCode="dataDict" sort="11">
+			<dataDictionary dataCode="flowStatus_draft" code="flowStatus_draft" text="草稿" sort="1" parentCode="flowStatus" systemCode="dataDict"/>
+			<dataDictionary dataCode="flowStatus_approve" code="flowStatus_approve" text="审批中" sort="10" parentCode="flowStatus" systemCode="dataDict"/>
+			<dataDictionary dataCode="flowStatus_end" code="flowStatus_end" text="已结束" sort="20" parentCode="flowStatus" systemCode="dataDict"/>
+			<dataDictionary dataCode="flowStatus_discard" code="flowStatus_discard" text="已撤销"  sort="30" parentCode="flowStatus" systemCode="dataDict"/>
+  		</dataDictionary>
+  		
+  		<dataDictionary  dataCode="task" code="task" text="个人事项"  parentCode="dataDict" systemCode="dataDict" sort="12">
+			<dataDictionary dataCode="task_todo" code="task_todo" attribute5="/action/flow/task/todoListPage" text="待办" sort="1" parentCode="task" systemCode="dataDict"/>
+			<dataDictionary dataCode="task_redo" code="task_redo" attribute5="/action/flow/task/redoListPage" text="已办" sort="10" parentCode="task" systemCode="dataDict"/>
+  		</dataDictionary>
+	</dataDictionarys>
+</root>

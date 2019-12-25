@@ -1,0 +1,16 @@
+#form table{
+	margin: auto;
+}
+#form table td:nth-child(2n){
+	text-align: left;
+	width: 200px;
+}
+#form table td:nth-child(2n+1){
+	text-align: right;
+	width:100px;
+}
+
+#form{
+	margin:0,auto;
+ text-align:center;
+}
